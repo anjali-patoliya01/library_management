@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:first_name",
+ "creation": "2024-08-22 10:10:25.862006",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_u5jf",
+  "student_info_column",
+  "amended_from",
+  "enable",
+  "client_side_doc",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "column_break_yeat",
+  "email",
+  "phone_no",
+  "dob",
+  "age",
+  "section_break_oyqm",
+  "family_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_u5jf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "server_side_scripting",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "student_info_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Int",
+   "label": "Phone no"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_yeat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oyqm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "family_members",
+   "fieldtype": "Table",
+   "label": "family members",
+   "options": "family_members"
+  },
+  {
+   "fieldname": "client_side_doc",
+   "fieldtype": "Link",
+   "label": "client side doc",
+   "options": "client_side_scripting"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 14:32:33.901391",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "server_side_scripting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

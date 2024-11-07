@@ -1,0 +1,622 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240821_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-21 18:00:06.677756
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240821_180003-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240821_180003-frappe_in-database.sql.gz 216.2KiB
+Backup for Site frappe.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240821_180006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-21 18:00:12.328995
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240821_180006-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240821_180006-frappe2_in-database.sql.gz 776.0KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240822_120002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-22 12:00:05.586908
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240822_120002-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240822_120002-frappe_in-database.sql.gz 217.5KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240822_120005-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-22 12:00:12.664016
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240822_120005-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240822_120005-frappe2_in-database.sql.gz 801.2KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240822_180002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-22 18:00:05.640303
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240822_180002-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240822_180002-frappe_in-database.sql.gz 218.4KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240822_180005-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-22 18:00:11.229439
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240822_180005-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240822_180005-frappe2_in-database.sql.gz 814.1KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240823_120002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-23 12:00:03.898342
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240823_120002-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240823_120002-frappe_in-database.sql.gz 220.2KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240821_180006-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240823_120003-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-23 12:00:07.255304
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240823_120003-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240823_120003-frappe2_in-database.sql.gz 829.6KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240823_180001-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-23 18:00:03.458411
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240823_180001-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240823_180001-frappe_in-database.sql.gz 221.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240822_120005-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240823_180003-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-23 18:00:07.576116
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240823_180003-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240823_180003-frappe2_in-database.sql.gz 862.3KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240824_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-24 12:00:06.581458
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240824_120003-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240824_120003-frappe_in-database.sql.gz 222.3KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240823_180003-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240823_180003-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240822_180005-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240824_120006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-24 12:00:13.338370
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240824_120006-frappe2_in-site_config_backup.json 149.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240824_120006-frappe2_in-database.sql.gz 872.7KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240824_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-24 18:00:08.933749
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240824_180003-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240824_180003-frappe_in-database.sql.gz 223.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240823_180003-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240823_180003-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240824_120006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240824_120006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240823_120003-frappe2_in-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240824_180008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-24 18:00:20.287554
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240824_180008-frappe2_in-site_config_backup.json 216.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240824_180008-frappe2_in-database.sql.gz 904.7KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240827_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-27 12:00:06.407015
+Config  : /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240827_120003-frappe_in-site_config_backup.json 127.0B
+Database: /home/frappe/frappe-bench/sites/frappe.in/private/backups/20240827_120003-frappe_in-database.sql.gz 225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240827_120006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-27 12:00:11.832258
+Config  : /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240827_120006-frappe2_in-site_config_backup.json 240.0B
+Database: /home/frappe/frappe-bench/sites/frappe2.in/private/backups/20240827_120006-frappe2_in-database.sql.gz 923.7KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240827_180005-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-27 18:00:10.079079
+Config  : ./frappe.in/private/backups/20240827_180005-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240827_180005-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240827_180010-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-27 18:00:20.442143
+Config  : ./frappe2.in/private/backups/20240827_180010-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240827_180010-frappe2_in-database.sql.gz         766.6KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240828_120004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-28 12:00:08.351174
+Config  : ./frappe.in/private/backups/20240828_120004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240828_120004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_103733-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_110445-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240828_120008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-28 12:00:16.336384
+Config  : ./frappe2.in/private/backups/20240828_120008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240828_120008-frappe2_in-database.sql.gz         767.0KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240828_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-08-28 18:00:07.148602
+Config  : ./frappe.in/private/backups/20240828_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240828_180003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240828_120008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240828_120008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_130239-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_123159-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_120006-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_153400-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_123520-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_154203-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_154556-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_152601-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_155410-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240828_180007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-08-28 18:00:13.438513
+Config  : ./frappe2.in/private/backups/20240828_180007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240828_180007-frappe2_in-database.sql.gz         773.3KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240902_120004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-02 12:00:08.006033
+Config  : ./frappe.in/private/backups/20240902_120004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240902_120004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240828_120008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240828_120008-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240828_180007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240828_180007-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240827_180010-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240902_120008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-02 12:00:13.779995
+Config  : ./frappe2.in/private/backups/20240902_120008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240902_120008-frappe2_in-database.sql.gz         776.1KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240903_120004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-03 12:00:07.856303
+Config  : ./frappe.in/private/backups/20240903_120004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240903_120004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240902_120008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240902_120008-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240903_120007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-03 12:00:17.093330
+Config  : ./frappe2.in/private/backups/20240903_120007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240903_120007-frappe2_in-database.sql.gz         784.2KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240904_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-04 18:00:07.498404
+Config  : ./frappe.in/private/backups/20240904_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240904_180003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240902_120008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240902_120008-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240903_120007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240903_120007-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240904_180007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-04 18:00:14.004108
+Config  : ./frappe2.in/private/backups/20240904_180007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240904_180007-frappe2_in-database.sql.gz         787.5KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240906_180002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-06 18:00:05.119345
+Config  : ./frappe.in/private/backups/20240906_180002-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240906_180002-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240904_180007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240904_180007-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240906_180005-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-06 18:00:08.339248
+Config  : ./frappe2.in/private/backups/20240906_180005-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240906_180005-frappe2_in-database.sql.gz         791.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240909_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-09 12:00:07.166772
+Config  : ./frappe.in/private/backups/20240909_120003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240909_120003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240906_180005-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240906_180005-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240909_120007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-09 12:00:13.244907
+Config  : ./frappe2.in/private/backups/20240909_120007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240909_120007-frappe2_in-database.sql.gz         792.3KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240909_180004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-09 18:00:08.376636
+Config  : ./frappe.in/private/backups/20240909_180004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240909_180004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240909_180008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-09 18:00:18.158596
+Config  : ./frappe2.in/private/backups/20240909_180008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240909_180008-frappe2_in-database.sql.gz         798.3KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240910_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-10 12:00:07.117941
+Config  : ./frappe.in/private/backups/20240910_120003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240910_120003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240910_120007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-10 12:00:13.346227
+Config  : ./frappe2.in/private/backups/20240910_120007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240910_120007-frappe2_in-database.sql.gz         798.6KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240910_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-10 18:00:06.204005
+Config  : ./frappe.in/private/backups/20240910_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240910_180003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240910_120007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240910_120007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_120007-frappe2_in-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240910_180006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-10 18:00:13.981413
+Config  : ./frappe2.in/private/backups/20240910_180006-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240910_180006-frappe2_in-database.sql.gz         799.4KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240911_180004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-11 18:00:07.925641
+Config  : ./frappe.in/private/backups/20240911_180004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240911_180004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240910_180006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240909_180008-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240910_120007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240910_180006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240910_120007-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240911_180007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-11 18:00:15.885695
+Config  : ./frappe2.in/private/backups/20240911_180007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240911_180007-frappe2_in-database.sql.gz         799.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240912_120004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-12 12:00:07.675821
+Config  : ./frappe.in/private/backups/20240912_120004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240912_120004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240910_180006-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240910_180006-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240912_120007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-12 12:00:16.222898
+Config  : ./frappe2.in/private/backups/20240912_120007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240912_120007-frappe2_in-database.sql.gz         802.6KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240912_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-12 18:00:07.195720
+Config  : ./frappe.in/private/backups/20240912_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240912_180003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240912_180007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-12 18:00:16.658665
+Config  : ./frappe2.in/private/backups/20240912_180007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240912_180007-frappe2_in-database.sql.gz         808.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240913_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-13 12:00:07.307837
+Config  : ./frappe.in/private/backups/20240913_120003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240913_120003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240912_180007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240912_180007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240911_180007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240913_120007-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-13 12:00:14.145227
+Config  : ./frappe2.in/private/backups/20240913_120007-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240913_120007-frappe2_in-database.sql.gz         810.2KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240914_120003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-14 12:00:05.253209
+Config  : ./frappe.in/private/backups/20240914_120003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240914_120003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240913_120007-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240912_180007-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240912_180007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240913_120007-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240912_120007-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240914_120005-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-14 12:00:07.748383
+Config  : ./frappe2.in/private/backups/20240914_120005-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240914_120005-frappe2_in-database.sql.gz         813.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240914_180002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-14 18:00:04.962753
+Config  : ./frappe.in/private/backups/20240914_180002-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240914_180002-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240913_120007-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240914_120005-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240914_120005-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240913_120007-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240914_180004-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-14 18:00:08.450293
+Config  : ./frappe2.in/private/backups/20240914_180004-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240914_180004-frappe2_in-database.sql.gz         822.2KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240916_180031-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-16 18:00:34.419859
+Config  : ./frappe.in/private/backups/20240916_180031-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240916_180031-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240914_180004-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240914_120005-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240914_120005-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240914_180004-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240916_180034-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-16 18:00:37.544093
+Config  : ./frappe2.in/private/backups/20240916_180034-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240916_180034-frappe2_in-database.sql.gz         831.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240926_180005-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-26 18:00:08.376148
+Config  : ./frappe.in/private/backups/20240926_180005-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240926_180005-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240916_180034-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240916_180034-frappe2_in-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240926_180008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-26 18:00:15.973802
+Config  : ./frappe2.in/private/backups/20240926_180008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240926_180008-frappe2_in-database.sql.gz         846.0KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240927_120005-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-27 12:00:08.761082
+Config  : ./frappe.in/private/backups/20240927_120005-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240927_120005-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240927_120008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-27 12:00:14.957717
+Config  : ./frappe2.in/private/backups/20240927_120008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240927_120008-frappe2_in-database.sql.gz         851.1KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240927_180004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-27 18:00:06.865483
+Config  : ./frappe.in/private/backups/20240927_180004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240927_180004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240927_180006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-27 18:00:12.135626
+Config  : ./frappe2.in/private/backups/20240927_180006-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240927_180006-frappe2_in-database.sql.gz         857.0KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240928_120004-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-28 12:00:08.194900
+Config  : ./frappe.in/private/backups/20240928_120004-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240928_120004-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240926_180008-frappe2_in-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240928_120008-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-28 12:00:14.694311
+Config  : ./frappe2.in/private/backups/20240928_120008-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240928_120008-frappe2_in-database.sql.gz         857.4KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240928_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-28 18:00:06.644881
+Config  : ./frappe.in/private/backups/20240928_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240928_180003-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240928_120008-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20240927_120008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20240928_120008-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240928_180006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-28 18:00:12.612962
+Config  : ./frappe2.in/private/backups/20240928_180006-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240928_180006-frappe2_in-database.sql.gz         857.4KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20240930_180002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-09-30 18:00:03.428717
+Config  : ./frappe.in/private/backups/20240930_180002-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20240930_180002-frappe_in-database.sql.gz         225.0KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20240928_120008-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-database.sql.gz is older than 24 hours
+File ./frappe2.in/private/backups/20240927_180006-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240928_180006-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240928_120008-frappe2_in-site_config_backup.json is older than 24 hours
+File ./frappe2.in/private/backups/20240928_180006-frappe2_in-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20240930_180003-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-09-30 18:00:05.597048
+Config  : ./frappe2.in/private/backups/20240930_180003-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20240930_180003-frappe2_in-database.sql.gz         770.9KiB
+Backup for Site frappe2.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20241003_120002-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-10-03 12:00:04.678864
+Config  : ./frappe.in/private/backups/20241003_120002-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20241003_120002-frappe_in-database.sql.gz         223.9KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20241003_114344-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20241003_114344-frappe2_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20241003_120004-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-10-03 12:00:12.369930
+Config  : ./frappe2.in/private/backups/20241003_120004-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20241003_120004-frappe2_in-database.sql.gz         800.0KiB
+Backup for Site frappe2.in has been successfully completed
+File ./frappe3.in/private/backups/20241003_114356-frappe3_in-database.sql.gz is recent
+File ./frappe3.in/private/backups/20241003_114356-frappe3_in-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_c755dcad4f216019 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _c755dcad4f216019 | /usr/bin/gzip >> ./frappe3.in/private/backups/20241003_120012-frappe3_in-database.sql.gz
+
+Backup Summary for frappe3.in at 2024-10-03 12:00:18.094288
+Config  : ./frappe3.in/private/backups/20241003_120012-frappe3_in-site_config_backup.json 118.0B
+Database: ./frappe3.in/private/backups/20241003_120012-frappe3_in-database.sql.gz         770.1KiB
+Backup for Site frappe3.in has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_1560219fd6a42b04 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _1560219fd6a42b04 | /usr/bin/gzip >> ./frappe.in/private/backups/20241003_180003-frappe_in-database.sql.gz
+
+Backup Summary for frappe.in at 2024-10-03 18:00:06.389431
+Config  : ./frappe.in/private/backups/20241003_180003-frappe_in-site_config_backup.json 127.0B
+Database: ./frappe.in/private/backups/20241003_180003-frappe_in-database.sql.gz         224.9KiB
+Backup for Site frappe.in has been successfully completed
+File ./frappe2.in/private/backups/20241003_114344-frappe2_in-database.sql.gz is recent
+File ./frappe2.in/private/backups/20241003_114344-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20241003_120004-frappe2_in-site_config_backup.json is recent
+File ./frappe2.in/private/backups/20241003_120004-frappe2_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_5e356d3c6f216c60 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5e356d3c6f216c60 | /usr/bin/gzip >> ./frappe2.in/private/backups/20241003_180006-frappe2_in-database.sql.gz
+
+Backup Summary for frappe2.in at 2024-10-03 18:00:13.041811
+Config  : ./frappe2.in/private/backups/20241003_180006-frappe2_in-site_config_backup.json 240.0B
+Database: ./frappe2.in/private/backups/20241003_180006-frappe2_in-database.sql.gz         817.5KiB
+Backup for Site frappe2.in has been successfully completed
+File ./frappe3.in/private/backups/20241003_120012-frappe3_in-site_config_backup.json is recent
+File ./frappe3.in/private/backups/20241003_114356-frappe3_in-database.sql.gz is recent
+File ./frappe3.in/private/backups/20241003_114356-frappe3_in-site_config_backup.json is recent
+File ./frappe3.in/private/backups/20241003_120012-frappe3_in-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_c755dcad4f216019 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _c755dcad4f216019 | /usr/bin/gzip >> ./frappe3.in/private/backups/20241003_180013-frappe3_in-database.sql.gz
+
+Backup Summary for frappe3.in at 2024-10-03 18:00:22.479631
+Config  : ./frappe3.in/private/backups/20241003_180013-frappe3_in-site_config_backup.json 118.0B
+Database: ./frappe3.in/private/backups/20241003_180013-frappe3_in-database.sql.gz         776.8KiB
+Backup for Site frappe3.in has been successfully completed

@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 09:44:34.854223",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype__fields_section",
+  "first_section_column",
+  "attach",
+  "attach_image",
+  "autocomplete",
+  "barcode",
+  "button",
+  "check",
+  "code",
+  "color",
+  "currency",
+  "data_field",
+  "date",
+  "datetime",
+  "dueration",
+  "float",
+  "location",
+  "heading",
+  "html",
+  "html_editor",
+  "icon",
+  "image",
+  "int",
+  "json",
+  "long_text",
+  "markdown_editor",
+  "password",
+  "percent",
+  "phone",
+  "rating",
+  "read_only",
+  "select",
+  "signature",
+  "small_text",
+  "table",
+  "text",
+  "text_editor",
+  "time"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "attach"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "label": "Attach image"
+  },
+  {
+   "fieldname": "autocomplete",
+   "fieldtype": "Autocomplete",
+   "label": "autocomplete"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "button"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "check"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Code",
+   "label": "code"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "color"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "currency"
+  },
+  {
+   "fieldname": "data_field",
+   "fieldtype": "Data",
+   "label": "Data field"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "DateTime"
+  },
+  {
+   "fieldname": "dueration",
+   "fieldtype": "Duration",
+   "label": "Dueration"
+  },
+  {
+   "fieldname": "float",
+   "fieldtype": "Float",
+   "label": "float"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "heading",
+   "fieldtype": "Heading",
+   "label": "Heading"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "HTML"
+  },
+  {
+   "fieldname": "html_editor",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Editor"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "first_section_column",
+   "fieldtype": "Column Break",
+   "label": "First section"
+  },
+  {
+   "fieldname": "doctype__fields_section",
+   "fieldtype": "Section Break",
+   "label": "Doctype  fields"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "int"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "JSON"
+  },
+  {
+   "fieldname": "long_text",
+   "fieldtype": "Long Text",
+   "label": "Long Text"
+  },
+  {
+   "fieldname": "markdown_editor",
+   "fieldtype": "Markdown Editor",
+   "label": "markdown Editor"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "password"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "percent"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "phone"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "read_only",
+   "fieldtype": "Read Only",
+   "label": "read only"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "select",
+   "options": "Ahmedabad\njunagadh\nsurat\ngandhinagar"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "signature"
+  },
+  {
+   "fieldname": "small_text",
+   "fieldtype": "Small Text",
+   "label": "small text"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "table",
+   "options": "family_members"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text",
+   "label": "text"
+  },
+  {
+   "fieldname": "text_editor",
+   "fieldtype": "Text Editor",
+   "label": "text editor"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-24 12:26:35.017099",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "DocType_fields",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

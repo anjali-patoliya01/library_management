@@ -1,0 +1,24 @@
+2024-10-01 09:56:15,368 INFO ipython === bench console session ===
+2024-10-01 09:56:15,368 INFO ipython from library_management.tasks import cron
+2024-10-01 09:56:15,369 INFO ipython from library_management.tasks import cron
+2024-10-01 09:56:15,369 INFO ipython cron()
+2024-10-01 09:56:15,369 INFO ipython === session end ===
+2024-10-01 16:22:08,736 INFO ipython === bench console session ===
+2024-10-01 16:22:08,741 INFO ipython from library_management.tasks import long_running_job
+2024-10-01 16:22:08,742 INFO ipython long_running_job('A', 'B')
+2024-10-01 16:22:08,742 INFO ipython long_running_job('A', 'B')
+2024-10-01 16:22:08,742 INFO ipython long_running_job('A', 'B')
+2024-10-01 16:22:08,743 INFO ipython === session end ===
+2024-10-03 08:13:55,969 INFO ipython === bench console session ===
+2024-10-03 08:13:55,978 INFO ipython job = frappe.get_doc("Scheduler", "library_management.tasks.enqueue_job")
+2024-10-03 08:13:55,978 INFO ipython === session end ===
+2024-10-03 08:35:20,741 INFO ipython === bench console session ===
+2024-10-03 08:35:20,741 INFO ipython job = frappe.get_doc("Scheduler", "long_running_job")
+2024-10-03 08:35:20,741 INFO ipython job = frappe.get_doc("library_management", "long_running_job")
+2024-10-03 08:35:20,741 INFO ipython from frappe.utils import get_scheduler
+2024-10-03 08:35:20,741 INFO ipython === session end ===
+2024-10-03 08:47:53,716 INFO ipython === bench console session ===
+2024-10-03 08:47:53,718 INFO ipython from frappe.utils import get_job_status
+2024-10-03 08:47:53,718 INFO ipython === session end ===
+2024-10-03 09:13:11,646 INFO ipython === bench console session ===
+2024-10-03 09:13:11,654 INFO ipython === session end ===

@@ -1,0 +1,798 @@
+2024-08-27 12:33:18,951 ERROR frappe Failed to run after request hook
+Site: frappe2.in
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 197, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 117, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 132, in application
+    response = handle_exception(e)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 395, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/utils.py", line 521, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 172, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 146, in application
+    run_after_request_hooks(request, response)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 161, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+2024-08-27 12:47:31,759 ERROR frappe Could not take error snapshot: No module named 'demo.hooks'
+Site: frappe2.in
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 197, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1383, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+2024-08-27 12:47:31,772 ERROR frappe Failed to run after request hook
+Site: frappe2.in
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 197, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 117, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 132, in application
+    response = handle_exception(e)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 395, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/utils.py", line 521, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 172, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 146, in application
+    run_after_request_hooks(request, response)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 161, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+2024-08-27 12:59:22,642 ERROR frappe Could not take error snapshot: No module named 'demo.hooks'
+Site: frappe2.in
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 197, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1383, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+2024-08-27 12:59:22,655 ERROR frappe Failed to run after request hook
+Site: frappe2.in
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 197, in init_request
+    for before_request_task in frappe.get_hooks("before_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 117, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 132, in application
+    response = handle_exception(e)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 395, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/utils.py", line 521, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 172, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 146, in application
+    run_after_request_hooks(request, response)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 161, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1691, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1660, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 1526, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'demo.hooks'
+2024-08-27 15:50:55,402 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {}
+2024-08-27 15:54:29,719 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {}
+2024-08-27 18:42:07,373 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'docs': '{"name":"DocType_fields","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"Programming","naming_rule":"","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","actions":[],"fields":[{"name":"k3g8d6m2o0","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"autocomplete","label":"Autocomplete","fieldtype":"Autocomplete","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"},{"name":"k3g8u4r16t","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"attach","label":"attach","fieldtype":"Attach","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"}],"permissions":[{"name":"k22ebpbvhi","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"states":[],"__last_sync_on":"2024-08-27T13:12:06.164Z"}', 'method': 'check_pending_migration', 'cmd': 'run_doc_method'}
+2024-08-27 18:42:24,881 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'docs': '{"name":"DocType_fields","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"Programming","naming_rule":"","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","actions":[],"fields":[{"name":"k3g8d6m2o0","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"autocomplete","label":"Autocomplete","fieldtype":"Autocomplete","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"},{"name":"k3g8u4r16t","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"attach","label":"attach","fieldtype":"Attach","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"}],"permissions":[{"name":"k22ebpbvhi","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"states":[],"__last_sync_on":"2024-08-27T13:12:24.349Z"}', 'method': 'check_pending_migration', 'cmd': 'run_doc_method'}
+2024-08-27 18:42:55,819 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'docs': '{"name":"DocType_fields","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"Programming","naming_rule":"","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","actions":[],"fields":[{"name":"k3g8d6m2o0","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"autocomplete","label":"Autocomplete","fieldtype":"Autocomplete","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"},{"name":"k3g8u4r16t","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"attach","label":"attach","fieldtype":"Attach","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"doctype":"DocField"}],"permissions":[{"name":"k22ebpbvhi","creation":"2024-08-27 18:29:13.395745","modified":"2024-08-27 18:31:40.031606","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"DocType_fields","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"states":[],"__last_sync_on":"2024-08-27T13:12:55.312Z"}', 'method': 'check_pending_migration', 'cmd': 'run_doc_method'}
+2024-08-28 11:51:33,231 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-09-02 19:01:14,919 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Library Member', 'with_parent': '1', 'cached_timestamp': '2024-09-02 15:50:11.863905', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-09-02 19:20:23,555 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Library Member', 'with_parent': '1', 'cached_timestamp': '2024-09-02 15:50:11.863905', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-09-03 10:33:16,284 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'suthor': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:43:49,031 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'author': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:44:27,079 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'suthor': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:45:19,548 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'author': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:47:18,657 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'suthor': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:50:39,978 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'suthor': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-03 10:53:35,955 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'author': 'Anju Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-06 18:07:21,982 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'author': 'Maulik Patel', 'cmd': 'demo_app.library_management.doctype.library_member.library_member.get_author_articles'}
+2024-09-09 16:04:27,610 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-fkkdvlxfou","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"Maulik","parent_doc_link":"Narendra Patoliya"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-10 10:55:09,993 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'with_parent': '1', 'cached_timestamp': '2024-09-09 15:59:12.935971', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-09-10 11:10:03,084 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-spmkgdbrhx","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"payal","parent_doc_link":"Laljibhai thummar"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-10 11:32:58,778 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-09-10 11:38:35,669 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-qyfxmumeqz","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"Dixita"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-10 15:01:27,493 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-pgxnpnvfse","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"Rutuba"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-10 18:13:46,080 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-shogzihmfq","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"EFG"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-10 18:26:41,207 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-eezaiycqwy","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"BBBB"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 16:24:31,465 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-uqqcevpoqm","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"A","parent_doc_link":"New Doc"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 16:31:39,166 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-uqqcevpoqm","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"A","parent_doc_link":"New Doc"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 17:21:04,113 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'B', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-11 17:30:24,800 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-pviofalzpx","__islocal":1,"__unsaved":1,"owner":"Administrator","name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 17:31:37,491 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'docname': 'D', 'name': 'Dd', 'enqueue': 'true', 'merge': '0', 'freeze': 'true', 'freeze_message': 'Updating related fields...', 'cmd': 'frappe.model.rename_doc.update_document_title'}
+2024-09-11 17:46:07,663 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"A","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 17:13:13.207783","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"A","parent_age":0,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T12:15:41.602Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 17:48:19,962 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'A', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-11 21:24:27,640 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:20:58.598045","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T15:54:21.744Z","parent_full_name":"aadd","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 21:24:53,343 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:20:58.598045","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T15:54:21.744Z","parent_full_name":"er","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 21:27:18,686 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:26:19.280382","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_full_name":"abab","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T15:57:09.459Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 21:36:14,059 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:35:27.438997","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_full_name":"aaaabbbb","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T16:06:05.292Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 21:37:19,862 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:35:27.438997","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_full_name":"aaaabbbb","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T16:06:05.292Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-11 21:38:56,215 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA","owner":"Administrator","creation":"2024-09-11 17:13:13.207783","modified":"2024-09-11 21:35:27.438997","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA","parent_full_name":"aaaabbbb","parent_age":65,"enable":1,"doctype":"Child Doc","__last_sync_on":"2024-09-11T16:06:05.292Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 09:32:28,413 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-kabcwmmnhg","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"name1":"AD"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 09:33:19,276 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'new-child-doc-kabcwmmnhg', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-12 10:56:46,307 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-wksroaajqh","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"name1":"VP"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 11:45:02,973 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-dgxlalmdyv","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"childtable":[],"name1":"AAAA"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 11:49:29,391 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AAAA","owner":"Administrator","creation":"2024-09-12 11:47:46.129441","modified":"2024-09-12 11:47:46.129441","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AAAA","age":23,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[{"name":"iir5puhamp","owner":"Administrator","creation":"2024-09-12 11:47:46.195708","modified":"2024-09-12 11:47:46.195708","modified_by":"Administrator","docstatus":0,"idx":1,"child_name":"AAA","age":10,"std":4,"parent":"AAAA","parentfield":"childtable","parenttype":"Child Doc","doctype":"Child Table"}],"__last_sync_on":"2024-09-12T06:19:18.206Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 11:50:13,116 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-iwwkkltjcm","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"childtable":[],"name1":"BBBB"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 12:08:52,350 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-roxgfcxobw","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"childtable":[],"name1":"V"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 12:17:07,249 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-tnnwruejko","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"childtable":[],"name1":"Anjali N"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 13:51:39,025 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AAAA","owner":"Administrator","creation":"2024-09-12 11:47:46.129441","modified":"2024-09-12 12:56:59.619685","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AAAA","age":18,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-12T08:21:32.599Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 14:07:25,986 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"FF","owner":"Administrator","creation":"2024-09-12 13:26:25.275469","modified":"2024-09-12 13:26:25.275469","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"FF","age":32,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-12T08:37:15.769Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 16:51:57,022 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'VP', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-12 17:48:29,996 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'VP', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-12 17:48:48,849 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'VP', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-13 09:55:10,039 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-nvsabcslso","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"old_parent":"00007","parent_tree_doc":"00005","name1":"AA1"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:02:05,243 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-thyvnpfcec","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":1,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:02:07,825 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-thyvnpfcec","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":1,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:11:24,142 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-phyhghiaby","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:13:36,140 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-aisdwtcrtv","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:19:28,127 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-jhbyurkadw","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:20:05,805 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-vkehyfzulf","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 10:21:48,499 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Tree Doc","name":"new-tree-doc-vkehyfzulf","__islocal":1,"__unsaved":1,"owner":"Administrator","is_group":0,"name1":"C"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 11:35:19,203 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Child Doc","name":"new-child-doc-duafceejgk","__islocal":1,"__unsaved":1,"owner":"Administrator","enable":0,"childtable":[],"name1":"AA3"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 11:42:53,127 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA4","owner":"Administrator","creation":"2024-09-13 11:42:17.904007","modified":"2024-09-13 11:42:17.904007","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA4","age":34,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-13T06:12:48.526Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 11:45:19,062 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"AA4","owner":"Administrator","creation":"2024-09-13 11:42:17.904007","modified":"2024-09-13 11:44:10.817082","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"AA4","age":78,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-13T06:15:12.676Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 12:31:22,912 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-dvuseafvvd","__islocal":1,"__unsaved":1,"owner":"Administrator","student_name":"B"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 12:42:28,295 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-dvuseafvvd","__islocal":1,"__unsaved":1,"owner":"Administrator","student_name":"B"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 12:43:19,530 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-hsvbzumgwq","__islocal":1,"__unsaved":1,"owner":"Administrator","student_name":"B","std":12,"parent_doc_link":"Kishorbhai Patoliya"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 13:06:26,860 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-yzghcnthhh","__islocal":1,"__unsaved":1,"owner":"Administrator","student_name":"E","std":12,"dob":"2006-04-10","email":"E12@gamil.com","parent_doc_link":"Laljibhai thummar"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 13:09:59,493 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-hmvtcjxtzz","__islocal":1,"__unsaved":1,"owner":"Administrator","student_name":"E"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 13:42:25,199 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"C","owner":"Administrator","creation":"2024-09-13 12:45:06.603588","modified":"2024-09-13 13:30:44.185552","modified_by":"Administrator","docstatus":0,"idx":0,"student_name":"C","std":null,"parent_doc_link":"Laljibhai thummar","status":1,"doctype":"Student Doc","__last_sync_on":"2024-09-13T08:10:19.798Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 14:52:34,936 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"C","owner":"Administrator","creation":"2024-09-13 12:45:06.603588","modified":"2024-09-13 13:30:44.185552","modified_by":"Administrator","docstatus":0,"idx":0,"student_name":"C","std":12,"parent_doc_link":"Laljibhai thummar","status":1,"doctype":"Student Doc","__last_sync_on":"2024-09-13T09:22:26.273Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 15:08:37,786 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"D","owner":"Administrator","creation":"2024-09-13 12:50:13.672876","modified":"2024-09-13 15:03:18.339388","modified_by":"Administrator","docstatus":0,"idx":0,"student_name":"D","std":2,"status":0,"doctype":"Student Doc","__last_sync_on":"2024-09-13T09:38:30.025Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 15:12:17,820 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-brurvpbjcb","__islocal":1,"__unsaved":1,"owner":"Administrator","status":1,"student_name":"F","std":10,"dob":"2008-05-14"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 16:11:41,680 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Doc","name":"new-student-doc-lpbnjxykqc","__islocal":1,"__unsaved":1,"owner":"Administrator","status":1,"student_name":"A2"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:01:55,586 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A1","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":88,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":78,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:31:44.565Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:02:54,921 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A1","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":67,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":70,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:32:44.046Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:08:09,313 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A1","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":67,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":88,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:37:58.243Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:09:32,246 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A1","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":67,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":56,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:39:20.818Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:10:04,266 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A1","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":69,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":78,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:39:54.414Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:10:53,557 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":67,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":78,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:40:46.947Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 16:11:53,574 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Student-00020","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":0,"student_id":5,"student_name":"A","date_of_birth":"2009-11-17","gender":"Female","status":0,"grade":"C+","percentage":65,"doctype":"Student","subject":[{"name":"8d2ffd65ta","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":1,"subject_name":"Maths","marks":89,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"brsben0kah","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":2,"subject_name":"Science","marks":67,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"},{"name":"bt8ogdr8m1","owner":"Administrator","creation":"2024-09-14 12:47:02.364924","modified":"2024-09-14 16:00:46.365230","modified_by":"Administrator","docstatus":0,"idx":3,"subject_name":"English","marks":78,"parent":"Student-00020","parentfield":"subject","parenttype":"Student","doctype":"Subject"}],"__last_sync_on":"2024-09-14T10:41:47.770Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-14 17:22:06,160 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'CCCC', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-14 17:22:22,031 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'name': 'CCCC', 'cmd': 'frappe.desk.form.load.getdoc'}
+2024-09-16 16:44:51,523 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"H","owner":"Administrator","creation":"2024-09-16 16:19:56.101634","modified":"2024-09-16 16:21:07.654175","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"H","age":14,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-16T11:14:45.329Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-16 16:44:55,765 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"H","owner":"Administrator","creation":"2024-09-16 16:19:56.101634","modified":"2024-09-16 16:21:07.654175","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"H","age":14,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-16T11:14:45.329Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-16 16:50:08,476 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"H","owner":"Administrator","creation":"2024-09-16 16:19:56.101634","modified":"2024-09-16 16:49:36.846547","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"H","age":17,"parent_age":0,"enable":0,"doctype":"Child Doc","childtable":[],"__last_sync_on":"2024-09-16T11:19:59.993Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-16 16:52:32,149 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'fields': '["`tabChild Doc`.`name`","`tabChild Doc`.`owner`","`tabChild Doc`.`creation`","`tabChild Doc`.`modified`","`tabChild Doc`.`modified_by`","`tabChild Doc`.`_user_tags`","`tabChild Doc`.`_comments`","`tabChild Doc`.`_assign`","`tabChild Doc`.`_liked_by`","`tabChild Doc`.`docstatus`","`tabChild Doc`.`idx`","`tabChild Doc`.`_seen`"]', 'filters': '[]', 'order_by': '`tabChild Doc`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': '1', 'cmd': 'frappe.desk.reportview.get'}
+2024-09-16 16:52:39,007 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'fields': '["`tabChild Doc`.`name`","`tabChild Doc`.`owner`","`tabChild Doc`.`creation`","`tabChild Doc`.`modified`","`tabChild Doc`.`modified_by`","`tabChild Doc`.`_user_tags`","`tabChild Doc`.`_comments`","`tabChild Doc`.`_assign`","`tabChild Doc`.`_liked_by`","`tabChild Doc`.`docstatus`","`tabChild Doc`.`idx`","`tabChild Doc`.`_seen`"]', 'filters': '[]', 'order_by': '`tabChild Doc`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': '1', 'cmd': 'frappe.desk.reportview.get'}
+2024-09-16 16:53:18,479 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'Child Doc', 'fields': '["`tabChild Doc`.`name`","`tabChild Doc`.`owner`","`tabChild Doc`.`creation`","`tabChild Doc`.`modified`","`tabChild Doc`.`modified_by`","`tabChild Doc`.`_user_tags`","`tabChild Doc`.`_comments`","`tabChild Doc`.`_assign`","`tabChild Doc`.`_liked_by`","`tabChild Doc`.`docstatus`","`tabChild Doc`.`idx`","`tabChild Doc`.`_seen`"]', 'filters': '[]', 'order_by': '`tabChild Doc`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': '1', 'cmd': 'frappe.desk.reportview.get'}
+2024-09-16 16:53:40,473 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doctype': 'DocType', 'docname': 'Child Doc', 'name': 'Child_doc', 'enqueue': 'true', 'merge': '0', 'freeze': 'true', 'freeze_message': 'Updating related fields...', 'cmd': 'frappe.model.rename_doc.update_document_title'}
+2024-09-26 16:50:28,726 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Client side scripting","creation":"2024-09-14 12:36:28.527981","modified":"2024-09-26 16:42:05.468549","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"Task","naming_rule":"By fieldname","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-lhefbxsrml","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Check","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":1,"__run_link_triggers":1,"fieldname":"is_present","label":"Is Present","columns":0,"default":"0","length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-odjmprxpxl","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Int","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":2,"__run_link_triggers":1,"fieldname":"roll_no","label":"Roll No."},{"docstatus":0,"doctype":"DocField","name":"new-docfield-odshlcroji","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":1,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":3,"__run_link_triggers":1,"fieldname":"first_name","label":"First Name ","columns":0,"length":0,"options":"Name"},{"docstatus":0,"doctype":"DocField","name":"new-docfield-awkjjtfvqg","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":4,"__run_link_triggers":1,"fieldname":"last_name","label":"Last Name","options":"Name","columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-poyninvqun","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Column Break","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"column_break_3qdy","columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-cyvusepexl","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":6,"__run_link_triggers":1,"fieldname":"email","label":"Email","options":"Email","columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-eeqnaxvfgh","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":7,"__run_link_triggers":1,"fieldname":"phone_number","label":"Phone number","options":"Phone","columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-httedfpuci","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Link","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":1,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":1,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":1,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":8,"fieldname":"amended_from","label":"Amended From","options":"Client side scripting","columns":0,"length":0}],"links":[],"actions":[],"states":[],"permissions":[{"name":"86sdqknudp","creation":"2024-09-14 12:36:28.527981","modified":"2024-09-26 16:42:05.468549","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Client side scripting","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"autoname":"field:first_name","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-26 16:53:14,881 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'doc': '{"name":"Client side scripting","creation":"2024-09-14 12:36:28.527981","modified":"2024-09-26 16:50:27.401475","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"Task","autoname":"field:first_name","naming_rule":"By fieldname","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-gbliaxdvfw","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Check","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"is_present","label":"Is Present","show_preview_popup":0,"columns":0,"default":"0","length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-ethynceyjc","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Int","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"roll_no","label":"Roll No.","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-sheikqkdfv","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":1,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"first_name","label":"First Name ","options":"Name","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-jmqyfpgvpt","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"last_name","label":"Last Name","options":"Name","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-eoynplrtrf","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Column Break","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"column_break_3qdy","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-bgllhibyyu","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":6,"fieldname":"email","label":"Email","options":"Email","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-fhfxphtqbt","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":7,"fieldname":"phone_number","label":"Phone number","options":"Phone","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-xygvgitrwn","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Link","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":1,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":1,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":1,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":8,"fieldname":"amended_from","label":"Amended From","options":"Client side scripting","show_preview_popup":0,"columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-ojpbkxiqtd","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Section Break","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":9,"__run_link_triggers":1,"fieldname":"section_break_mrfe","label":""},{"docstatus":0,"doctype":"DocField","name":"new-docfield-roiarxgdrz","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Table","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"Client side scripting","parentfield":"fields","parenttype":"DocType","idx":10,"__run_link_triggers":1,"fieldname":"student_rsult","label":"Student Rsult","options":"Student Result"}],"links":[],"actions":[],"states":[],"permissions":[{"name":"86sdqknudp","creation":"2024-09-14 12:36:28.527981","modified":"2024-09-26 16:50:27.401475","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Client side scripting","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-27 16:18:52,124 ERROR frappe New Exception collected in error log
+Site: frappe2.in
+Form Dict: {'report_name': 'Student Script Report', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
